@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-top: 1.7rem;
+    padding:1rem 3rem ;
+    background-color: gray;
+    color: white;
+}
+
+.btn:hover{
+    background: black;
+}
+
+.container{
+    width: 70%;
+    padding: 2rem;
+    margin:0 auto;
+}
+
+.admin-product-form-container form{
+    max-width: 50rem;
+    margin:0 auto;
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: lightgrey;
+}
+
+.admin-product-form-container form h3{
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.admin-product-form-container form .box{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.7rem;
+    margin: 1rem 0;
+    background: white;
+    text-transform: none;
+}
+
+.product-list{
+    margin:2rem 0;
+    overflow-y: scroll;
+}
+
+.product-list .product-list-table{
+    width: 100%;
+    text-align: center;
+}
+
+.product-list .product-list-table tr{
+    background: thistle;
+
+}
+
+.product-list .product-list-table td{
+    padding:1rem ;
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .product-list .product-list-table{
+        width: 80%;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+}
+
