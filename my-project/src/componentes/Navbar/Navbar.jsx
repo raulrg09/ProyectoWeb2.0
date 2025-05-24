@@ -1,6 +1,7 @@
 import React from 'react'
 import { IoSearchCircle } from 'react-icons/io5'
 import { TiShoppingCart } from "react-icons/ti";
+import DarkMode from './DarkMode';
 
 const MenuLinks = [
     {
@@ -72,7 +73,7 @@ const Navbar = () => {
                     </button>
                     {/* Botón de modo oscuro */}
                     <div>
-
+                        <DarkMode/>
                     </div>
                 </div>
             </div>
