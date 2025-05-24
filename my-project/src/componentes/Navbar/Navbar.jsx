@@ -2,6 +2,7 @@ import React from 'react'
 import { IoSearchCircle } from 'react-icons/io5'
 import { TiShoppingCart } from "react-icons/ti";
 import DarkMode from './DarkMode';
+import { IoCaretDownCircle } from "react-icons/io5";
 
 const MenuLinks = [
     {
@@ -23,6 +24,24 @@ const MenuLinks = [
         id: 4,
         name: "Blogs",
         link: "/#blogs",
+    },
+]
+
+const DropdownLinks = [
+    {
+        id: 1,
+        name: "Novedades",
+        link: "/#",
+    },
+    {
+        id: 2,
+        name: "Más vendidos",
+        link: "/#",
+    },
+    {
+        id: 3,
+        name: "Mejor calificados",
+        link: "/#",
     },
 ]
 
@@ -50,6 +69,28 @@ const Navbar = () => {
                                     </li>
                                 ))
                             }
+                            {/* Menú desplegable */}
+                            <li className="relative cursor-pointer group">
+                                <a href="#" className="flex items-center gap-[2px] font-semibold text-gray-500 dark:hover:text-white py-2">
+                                    Enlaces
+                                    <span>
+                                    <IoCaretDownCircle className="group-hover:rotate-180 duration-300"/>
+                                    </span>
+                                </a>  
+                                {/* Enlaces del menú desplegable */}
+                                <div className="absolute z-[9999] hidden group-hover:block w-[200px] rounded-md bg-white shadow-md dark:bg-gray-900 p-2 dark:text-white">
+                                    <ul className="space-y-2">
+                                        {
+                                            DropdownLinks.map((data, index) => (
+                                                <li>
+                                                    <a className="text-gray-500 hover:text-black dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-primario/20 rounded-md font-semibold"
+                                                    href={data.link}>{data.name}</a>
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
