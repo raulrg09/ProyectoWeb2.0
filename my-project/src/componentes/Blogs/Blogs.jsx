@@ -10,18 +10,21 @@ const BlogData = [
         subtitle:"Este artículo no trata de ser una guía de compra al uso limitado a especificaciones puras y duras, sino que intentaremos reflexionar sobre qué es importante a la hora de comprar un reloj inteligente...",
         published:"10 de enero de 2025",
         image: Img1,
+        aosDelay: "0",
     },
     {
         title:"Los mejores dispositivos calidad-precio",
         subtitle:"Los fabricantes siguen con su gran ritmo de lanzamientos arrancado el año y, aunque la tónica general es de precios mayores respecto al pasado curso, sigue habiendo grandes móviles en relación calidad precio...",
         published:"15 de marzo de 2025",
         image: Img2,
+        aosDelay: "200",
     },
     {
         title:"La revolución del VR",
         subtitle:"La Realidad Virtual (RV) es un entorno de escenas y objetos de apariencia real —generado mediante tecnología informática— que crea en el usuario la sensación de estar inmerso en él...",
         published:"21 de noviembre de 2024",
         image: Img3,
+        aosDelay: "400",
     },
 ]
 
@@ -36,7 +39,9 @@ const Blogs = () => {
             {/* Card del blog */}
             {
                 BlogData.map((data) =>(
-                    <div key={data.title} className='bg-white dark:bg-gray-900'>
+                    <div data-aos="fade up"
+                         data-aos-delay={data.aosDelay}
+                         key={data.title} className='bg-white dark:bg-gray-900'>
                         {/* Sección de imágen */}
                         <div className='overflow-hidden rounded-2xl mb-2'>
                             <img src={data.image} alt="" className='w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-500'/>
