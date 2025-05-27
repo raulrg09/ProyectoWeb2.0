@@ -14,6 +14,7 @@ export default {
         verde: "#2dcc6f",
         azul: "#1376f4",
         blanco: "#eeeeee",
+        morado: "#a631cd",
       },
       container: {
         center:true,
