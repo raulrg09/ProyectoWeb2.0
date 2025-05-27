@@ -29,7 +29,7 @@ const HeroData = [
     },
 ];
 
-const Hero = () => {
+const Hero = ({handleOrderPopup}) => {
 
     const settings = {
         dots: false,
@@ -62,7 +62,8 @@ const Hero = () => {
                                             <Button
                                                 text = "Comprar ahora"
                                                 bgColor="bg-primario"
-                                                textColor="text-white"/>
+                                                textColor="text-white"
+                                                handler={handleOrderPopup}/>
                                         </div>
                                     </div>
                                     {/* Sección de imágen */}
