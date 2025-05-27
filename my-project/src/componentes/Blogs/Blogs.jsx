@@ -45,7 +45,7 @@ const Blogs = () => {
                         <div className='space-y-2'>
                             <p className='text-xs text-gray-500'>{data.published}</p>
                             <p className='font-bold line-clamp-1'>{data.title}</p>
-                            <p className='line-clamp-2 text-sm text-gray-600 dark:text-gray-400'>{data.subtitle}</p>
+                            <p className='text-justify line-clamp-3 text-sm text-gray-600 dark:text-gray-400'>{data.subtitle}</p>
                         </div>
                     </div>
                 ))
