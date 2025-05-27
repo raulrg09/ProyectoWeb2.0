@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLocationArrow, FaMobileAlt, FaWhatsapp } from 'react-icons/fa'
+import Logo from "../../assets/website/space-invaders.png"
 
 const FooterLinks = [
     {
@@ -26,14 +27,15 @@ const Footer = () => {
         <div className="container">
             <div className="grid md:grid-cols-3 pb-20 pt-5">
                 {/* Datos de la organización */}
-                <div className='py-8 px-4'>
-                    <a href="#" className="text-primario font-semibold tracking-widest text-2xl uppercase
-                               sm:text-3xl">Tienda</a>
+                <div className='py-8 px-0'>
+                    <a href="#" className="text-primario font-semibold tracking-widest text-2xl
+                               sm:text-3xl">RetroGaming</a>
+                               <img src={Logo} alt="" className='w-[30px] h-[30px]'/>
                     <p className='text-gray-600 dark:text-white/70 lg:pr-24 pt-3'>
                         lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores alias cum
                     </p>
                     <p className='text-gray-500 mt-4'>
-                        🎮💻🎧🔊
+                        👾👾👾🎮🎮🎮🕹️🕹️🕹️
                     </p>
                     <a href="#" target="_blank" className='inline-block bg-primario/90 text-white py-2 px-4 mt-4 text-sm rounded-full'>Inicio</a>
                 </div>

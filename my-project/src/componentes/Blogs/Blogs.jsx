@@ -6,22 +6,22 @@ import Img3 from '../../assets/blogs/blog-3.jpg';
 
 const BlogData = [
     {
-        title:"Cómo escoger el smartwatch perfecto",
-        subtitle:"Este artículo no trata de ser una guía de compra al uso limitado a especificaciones puras y duras, sino que intentaremos reflexionar sobre qué es importante a la hora de comprar un reloj inteligente...",
+        title:"El RPG más ambicioso de GameCube",
+        subtitle:"Homeland fue uno de los videojuegos más ambiciosos y desconocidos de GameCube. Descubre este peculiar RPG online de 36 jugadores simultáneos...",
         published:"10 de enero de 2025",
         image: Img1,
         aosDelay: "0",
     },
     {
-        title:"Los mejores dispositivos calidad-precio",
-        subtitle:"Los fabricantes siguen con su gran ritmo de lanzamientos arrancado el año y, aunque la tónica general es de precios mayores respecto al pasado curso, sigue habiendo grandes móviles en relación calidad precio...",
+        title:"Este juego de Mario en 16-bits jamás vió la luz",
+        subtitle:"BS Super Mario Collection: el recopilatorio perdido de Mario para Super Famicom y Satellaview que no salió de Japón y solo estuvo disponible por tiempo limitado...",
         published:"15 de marzo de 2025",
         image: Img2,
         aosDelay: "200",
     },
     {
-        title:"La revolución del VR",
-        subtitle:"La Realidad Virtual (RV) es un entorno de escenas y objetos de apariencia real —generado mediante tecnología informática— que crea en el usuario la sensación de estar inmerso en él...",
+        title:"Pokemon Oro y Plata cumplen 25 años",
+        subtitle:"Pokémon Oro y Pokémon Plata debutaron el 21 de noviembre de 1999 en Japón, por lo que el 21/11/2024 cumplen un cuarto de siglo. Repasamos estos títulos únicos y destacamos por qué son tan queridos y recordados...",
         published:"21 de noviembre de 2024",
         image: Img3,
         aosDelay: "400",

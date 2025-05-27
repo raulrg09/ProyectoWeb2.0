@@ -5,34 +5,35 @@ import Category from './componentes/Category/Category';
 import Category2 from './componentes/Category/Category2';
 import Services from './componentes/Services/Services';
 import Banner from './componentes/Banner/Banner';
-import headphone from './assets/hero/headphone.png';
+import consolas from './assets/hero/consolas.png';
 import Products from './componentes/Products/Products';
 import smartwatch2 from './assets/category/smartwatch2-removebg-preview.png';
 import Blogs from './componentes/Blogs/Blogs';
+import videojuegos from './assets/hero/boxes-pack.png';
 import Footer from './componentes/Footer/Footer';
 import Popup from './componentes/Popup/Popup';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const BannerData = {
-    discount: "30% DESCUENTO",
-    title: "Audífonos",
-    date: "10 al 28 de Enero",
-    image: headphone,
-    title2: "Air Solo Bass",
-    title3: "Venta de invierno",
-    title4: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reciendis",
+    discount: "15% DESCUENTO",
+    title: "Consolas",
+    date: "Del 26 de mayo al 3 de junio",
+    image: consolas,
+    title2: "Nintendo, Sony y Microsoft",
+    title3: "",
+    title4: "Descuento válido en compras mínimas de $3,000",
     bgColor: "#f42c37",
 };
 
 const BannerData2 = {
-    discount: "40% DESCUENTO",
-    title: "Smartwatch",
-    date: "14 al 18 de enero",
-    image: smartwatch2,
-    title2: "Smart Solo",
-    title3: "Venta de invierno",
-    title4: "LLorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reciendis",
+    discount: "20% DESCUENTO",
+    title: "Juegos",
+    date: "Del 26 de mayo al 3 de junio",
+    image: videojuegos,
+    title2: "Portátiles y Sobremesa",
+    title3: "",
+    title4: "Descuento válido en compras mínimas de $2,000",
     bgColor: "#2dcc6f",
 }
 

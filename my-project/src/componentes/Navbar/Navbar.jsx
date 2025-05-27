@@ -3,6 +3,7 @@ import { IoSearchCircle } from 'react-icons/io5'
 import { TiShoppingCart } from "react-icons/ti";
 import DarkMode from './DarkMode';
 import { IoCaretDownCircle } from "react-icons/io5";
+import Logo from "../../assets/website/space-invaders.png"
 
 const MenuLinks = [
     {
@@ -30,17 +31,17 @@ const MenuLinks = [
 const DropdownLinks = [
     {
         id: 1,
-        name: "Novedades",
+        name: "Consolas",
         link: "/#",
     },
     {
         id: 2,
-        name: "Más vendidos",
+        name: "Videojuegos",
         link: "/#",
     },
     {
         id: 3,
-        name: "Mejor calificados",
+        name: "Controles",
         link: "/#",
     },
 ]
@@ -53,9 +54,10 @@ const Navbar = ({handleOrderPopup}) => {
                 {/* Sección de logo y enlaces */}
                 <div className="flex items-center gap-4">
                     <a href="#"
-                    className="text-primario font-semibold tracking-widest text-2xl uppercase
+                    className="text-primario font-semibold tracking-widest text-2xl
                                sm:text-3xl"
-                    >Tienda</a>
+                    >RetroGaming</a>
+                    <img src={Logo} alt="" className='w-[30px] h-[30px]'/>
                     {/* Items del menú */}
                     <div className="hidden lg:block">
                         <ul className="flex items-center gap-4">

@@ -1,45 +1,46 @@
 import React from 'react'
 import Slider from "react-slick";
-import Image1 from "../../assets/hero/headphone.png";
-import Image2 from "../../assets/category/vr.png";
-import Image3 from "../../assets/category/macbook.png";
+import Image1 from "../../assets/hero/nintendo-64-hero.png";
+import Image2 from "../../assets/hero/playstation-2.png";
+import Image3 from "../../assets/hero/xbox-clasico.png";
 import Button from '../Shared/Button';
 
 const HeroData = [
     {
         id: 1,
         img: Image1,
-        subtitle: "Audífonos",
-        title: "Audífonos",
-        title2: "Wireless",        
+        subtitle: "Desde $1,999",
+        title: "Consolas",
+        title2: "Nintendo 64",        
     },
     {
         id: 2,
         img: Image2,
-        subtitle: "Beats Solo",
-        title: "Wireless",
-        title2: "Virtual",        
+        subtitle: "Desde $1,499",
+        title: "Consolas",
+        title2: "PlayStation 2",        
     },
     {
         id: 3,
         img: Image3,
-        subtitle: "Beats Solo",
-        title: "Branded",
-        title2: "Laptops",
+        subtitle: "Desde $2,499",
+        title: "Consolas",
+        title2: "XBOX Clásico",
     },
 ];
 
 const Hero = ({handleOrderPopup}) => {
 
     const settings = {
-        dots: false,
-        arrows: false,
+        dots: true,
+        autoplay: true,
+        arrows: true,
         infinite: true,
         speed: 800,
         slidesToScroll: 1,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3500,
         cssEase: "ease-in-out",
-        pauseOnHover: false,
+        pauseOnHover: true,
         pauseOnFocus: true,
     };
 
@@ -66,7 +67,7 @@ const Hero = ({handleOrderPopup}) => {
                                         <h1 data-aos="zoom-out" 
                                             data-aos-duration="500" 
                                             data-aos-once="true"
-                                            className="text-5xl uppercase text-white dark:text-white/5 sm:text-[60px] md:text-[80px] xl:text-[120px] font-bold">{data.title2}</h1>
+                                            className="text-5xl uppercase text-white dark:text-black sm:text-[60px] md:text-[80px] xl:text-[80px] font-bold">{data.title2}</h1>
                                         <div data-aos="fade-up" 
                                             data-aos-offset="0"
                                             data-aos-duration="500" 
@@ -82,7 +83,7 @@ const Hero = ({handleOrderPopup}) => {
                                     <div className="order-1 sm:order-2">
                                         <div data-aos="zoom-in" data-aos-once="true" className='relative z-10'>
                                             <img src={data.img} alt="" 
-                                            className="w-[300px] sm:w-[450px] h-[300px] sm:h-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40"/>
+                                            className="w-[300px] sm:w-[675px] h-[300px] sm:h-[450px] sm:scale-95 lg:scale-120 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)] relative z-40"/>
                                         </div>
                                     </div>
                                 </div>                        

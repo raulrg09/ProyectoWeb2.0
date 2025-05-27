@@ -1,7 +1,7 @@
 import React from 'react'
-import Image1 from "../../assets/category/gaming.png";
-import Image2 from "../../assets/category/vr.png";
-import Image3 from "../../assets/category/speaker.png";
+import Image1 from "../../assets/category/ps1.png";
+import Image2 from "../../assets/category/dsi.png";
+import Image3 from "../../assets/category/god-of-war-2.png";
 import Button from '../Shared/Button';
 
 const Category = () => {
@@ -13,46 +13,46 @@ const Category = () => {
                 <div className="col-span-2 py-10 pl-5 bg-gradient-to-br from-gray-500/90 to-gray-100 text-white rounded-3xl relative h-[320px] flex items-end">
                     <div>
                         <div className="mb-4">
-                            <p className='mb-[2px] text-white'>Enjoy</p>
-                            <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-60 mb-2'>Consoles</p>
+                            <p className='mb-[2px] text-white'>Consolas</p>
+                            <p className='text-2xl font-semibold mb-[2px]'>Sony</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-60 dark:text-black dark:opacity-100 mb-2'>SOBREMESA</p>
                             <Button 
-                            text="Browse" 
+                            text="Explorar" 
                             bgColor={"bg-primario"}
                             textColor={"text-white"}/>
                         </div>
                     </div>
-                    <img src={Image1} alt="" className='w-[250px] absolute top-1/2 -translate-y-1/2 -right-0' />
+                    <img src={Image1} alt="" className='w-[350px] absolute top-1/2 -translate-y-1/2 -right-0' />
                 </div>
                 {/* Segunda columna */}
-                <div className="py-10 pl-5 bg-gradient-to-br from-verde/90 to-verde/70 text-white rounded-3xl relative h-[320px] flex items-start">
+                <div className="py-10 pl-5 bg-gradient-to-br from-[#F955A0] to-[#F955A0] text-white rounded-3xl relative h-[320px] flex items-start">
                     <div>
                         <div className="mb-4">
-                            <p className='mb-[2px] text-white'>Enjoy</p>
-                            <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>Oculus</p>
+                            <p className='mb-[2px] text-white'>Consolas</p>
+                            <p className='text-2xl font-semibold mb-[2px]'>Portátiles</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-60 dark:text-black dark:opacity-100 mb-2'>NDSi</p>
                             <Button 
-                            text="Browse" 
+                            text="Explorar" 
                             bgColor={"bg-white"}
-                            textColor={"text-verde"}/>
+                            textColor={"text-[#d4377a]"}/>
                         </div>
                     </div>
-                    <img src={Image2} alt="" className='w-[320px] absolute bottom-0' />
+                    <img src={Image2} alt="" className='w-[180px] absolute bottom-0 right-0' />
                 </div>
                 {/* Tercera columna */}
-                <div className="py-10 pl-5 bg-gradient-to-br from-azul to-azul/80 text-white rounded-3xl relative h-[320px] flex items-start">
+                <div className="py-10 pl-5 pr-4 bg-gradient-to-br from-[#00439C] to-[#00439C]/80 text-white rounded-3xl relative h-[320px] flex items-center overflow-hidden">
                     <div>
                         <div className="mb-4">
-                            <p className='mb-[2px] text-white'>Enjoy</p>
-                            <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>Speakers</p>
+                            <p className='mb-[2px] text-white'>Juegos</p>
+                            <p className='text-2xl font-semibold mb-[2px]'>Sony</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-60 dark:text-black dark:opacity-100 mb-2'>PS2</p>
                             <Button 
-                            text="Browse" 
+                            text="Explorar" 
                             bgColor={"bg-white"}
                             textColor={"text-azul"}/>
                         </div>
                     </div>
-                    <img src={Image3} alt="" className='w-[200px] absolute bottom-0 right-0' />
+                    <img src={Image3} alt="" className='w-[300px] absolute top-1/2 -translate-y-1/2 -right-8' />
                 </div>                              
             </div>
         </div>
